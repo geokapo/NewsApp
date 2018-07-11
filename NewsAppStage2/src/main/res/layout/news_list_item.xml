@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:id="@+id/newsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dim8"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text20"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/dim8"
+        tools:text="@string/news_title" />
+
+    <TextView
+        android:id="@+id/newsCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newsTitle"
+        android:paddingTop="@dimen/dim8"
+        android:textColor="@color/colorPrimeText"
+        android:textSize="@dimen/text16"
+        android:paddingLeft="@dimen/dim8"
+        tools:text="@string/news_category" />
+
+
+    <TextView
+        android:id="@+id/newsAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/newsCategory"
+        android:paddingTop="@dimen/dim8"
+        android:textColor="@color/colorSecondText"
+        android:textSize="@dimen/text12"
+        android:paddingLeft="@dimen/dim8"
+        tools:text="@string/author" />
+
+    <TextView
+        android:id="@+id/newsDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/newsCategory"
+        android:paddingTop="@dimen/dim8"
+        android:textColor="@color/colorSecondText"
+        android:textSize="@dimen/text12"
+        android:paddingRight="@dimen/dim8"
+        tools:text="@string/date" />
+
+
+</RelativeLayout>
