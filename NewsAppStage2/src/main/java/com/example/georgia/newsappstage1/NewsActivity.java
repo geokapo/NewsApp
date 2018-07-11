@@ -31,6 +31,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
     private static final String GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/search?q=sports%2C%20technology%2Cworldwide%2Cpolitics&show-tags=contributor&order-by=newest&page-size=20&api-key=48204420-2fdb-45dd-b9bf-0baee3ebbf2b";
 
 
+
     /**
      * Constant value for the news loader ID. We can choose any integer.
      * This really only comes into play if you're using multiple loaders.
@@ -129,7 +130,8 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
         uriBuilder.appendQueryParameter ( "limit", "10" );
         uriBuilder.appendQueryParameter ( "page-size", resultsLimit );
         uriBuilder.appendQueryParameter ( "orderby", orderBy );
-       
+
+
 
         return new NewsLoader ( this, uriBuilder.toString () );
     }

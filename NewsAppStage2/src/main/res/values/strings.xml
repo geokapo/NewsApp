@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">News App, Stage 1</string>
+    <string name="app_name">News App</string>
     <string name="sorry_there_are_no_news_to_display">Sorry, there are no news to display.</string>
     <string name="no_internet_connection">No internet connection.</string>
     <string name="news_title">News Title</string>
